@@ -33,7 +33,12 @@ do {
     console.log("do while loop");
     i++;
 } while (i<= 5);
-
+//abar suru korlam do while loop
+let loopCount = 1;
+do{
+  console.log("Hello"+ loopCount);
+  loopCount++;
+}while (loopCount <= 5);
 
 // ------------for of loop
 let numbers = [10, 20, 30, 40, 50];
@@ -41,3 +46,28 @@ let numbers = [10, 20, 30, 40, 50];
 for (let num of numbers) {
   console.log(num);
 }
+
+
+// ------------------for loop---
+for (let count = 1; count <=5;count++){
+  console.log("for loop"+count); 
+}
+// ei vabe o kora jai
+let count;
+for (count = 1;count<= 5;count ++){
+  console.log("ei vabe kora jai" +count);
+}
+console.log(count);
+
+// ei niom o kora jai
+let count1 = 1;
+for(;count1 <=5 ;){
+  console.log(" secend niom eita" +count1);
+  count1++;
+  
+}
+
+
+
+
+
