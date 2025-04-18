@@ -67,6 +67,60 @@ for(;count1 <=5 ;){
   
 }
 
+// -------------Object/ for in loop er kaj o ache
+
+let userInfo ={
+  firstName:"Rajip",
+  lastName:"Majumder",
+  favSubject:"js",
+  website:"ww.webground.in",
+  activeUser:true,
+  totalPrice:10.67
+};
+
+// console.log(userInfo["firstName"]);
+// console.log(userInfo["lastName"]);
+// console.log(userInfo["website"]);
+for (let propertyName in userInfo){
+  //console.log(userInfo[propertyName]);
+  // console.log(`Property name is : ${propertyName} and the propertyName valu is:${userInfo[propertyName]}`);// ei vabe o console log kora jai
+   console.log("Property name is :" + propertyName + "and the propertyName valu is :" + userInfo[propertyName]);// ei vabe o console log kora jai
+};
+
+let str = "JavaScript";
+let size = 0;
+for (let val of str ){
+  console.log("val=",val);
+  size++;
+}
+console.log("string size =",size);//10 eita o ekta niom
+
+
+//--------------even or odd numbors
+for (let num = 0;num <=100;num++){
+  if(num % 2===0){
+    //even number
+    console.log("num=",num);
+  }
+}
+
+
+for (let num = 0;num <=100;num++){
+  if(num % 2!==0){
+    //odd number
+    console.log("num=",num);
+  }
+}
+
+// ---------pactices game
+let gameNum = 25;
+let userNum = prompt("Gues the game number :");
+while (userNum !=gameNum){
+  userNum =prompt("you enterd worng number.Gues again :");
+}
+console.log("congratulation,you enterd the right number5");
+
+
 
 
 
